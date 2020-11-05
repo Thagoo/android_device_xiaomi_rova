@@ -46,5 +46,5 @@ for CAMERA_LIB in libmmsw_detail_enhancement.so libmmcamera2_stats_modules.so li
     sed -i "s|libgui.so|libwui.so|g" "${DEVICE_BLOB_ROOT}"/vendor/lib/${CAMERA_LIB}
 done
 
-patchelf --replace-needed "libandroid.so" "libcamera_shim.so" "${DEVICE_BLOB_ROOT}"/vendor/lib/libmmcamera2_stats_modules.so
-patchelf --replace-needed "libcamera_shim.so" "libshim_camera.so" "${DEVICE_BLOB_ROOT}"/vendor/lib/libmmcamera2_stats_modules.so
+"${PATCHELF}" --replace-needed "libandroid.so" "libcamera_shim.so" "${DEVICE_BLOB_ROOT}"/vendor/lib/libmmcamera2_stats_modules.so
+"${PATCHELF}" --replace-needed "libcamera_shim.so" "libshim_camera.so" "${DEVICE_BLOB_ROOT}"/vendor/lib/libmmcamera2_stats_modules.so
