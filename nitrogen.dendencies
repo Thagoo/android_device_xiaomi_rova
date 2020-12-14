@@ -4,7 +4,7 @@
     "target_path": "device/xiaomi/msm8917-common"
   },
   {
-    "repository": "android_kernel_xiaomi_rova-4.9",
-    "target_path": "kernel/xiaomi/rova-4.9"
+    "repository": "android_kernel_xiaomi_msm8917",
+    "target_path": "kernel/xiaomi/msm8917"
   }
 ]
